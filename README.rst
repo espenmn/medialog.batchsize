@@ -6,25 +6,26 @@
 medialog.batchsize
 ==================
 
-Tell me what your product does
+Adds a control panel for setting batch size for 'common views (plone.app.cntenttypes)'
 
 Features
 --------
 
-- Can be bullet points
+- Changes batch size for common views
+- Adds option to hide items marked 'exclude_from_nav' from views
+
 
 
 Examples
 --------
 
-This add-on can be seen in action at the following sites:
-- Is there a page on the internet where everybody can see the features?
+Nothing yet
 
 
 Documentation
 -------------
 
-Full documentation for end users can be found in the "docs" folder, and is also available online at http://docs.plone.org/foo/bar
+Full documentation for end users can not be found in the "docs" folder 
 
 
 Translations
@@ -56,14 +57,9 @@ Contribute
 
 - Issue Tracker: https://github.com/collective/medialog.batchsize/issues
 - Source Code: https://github.com/collective/medialog.batchsize
-- Documentation: https://docs.plone.org/foo/bar
 
 
-Support
--------
 
-If you are having issues, please let us know.
-We have a mailing list located at: project@example.com
 
 
 License
