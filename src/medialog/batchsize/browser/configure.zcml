@@ -11,24 +11,19 @@
       <browser:pages
           for="Products.CMFPlone.interfaces.IPloneSiteRoot"
           class=".folder.FolderView"
+          layer="medialog.batchsize.interfaces.IMedialogBatchsizeLayer"
           permission="zope2.View">
         <browser:page
             name="listing_view"
-            template="´templates/listing.pt"
-            menu="plone_displayviews"
-            title="Standard view"
+            template="templates/listing.pt"
             />
         <browser:page
             name="summary_view"
-            template="´templates/listing_summary.pt"
-            menu="plone_displayviews"
-            title="Summary view"
+            template="templates/listing_summary.pt"
             />
         <browser:page
             name="tabular_view"
-            template="´templates/listing_tabular.pt"
-            menu="plone_displayviews"
-            title="Tabular view"
+            template="templates/listing_tabular.pt"
             />
       </browser:pages>
 
@@ -37,24 +32,19 @@
       <browser:pages
           for="plone.dexterity.interfaces.IDexterityContainer"
           class=".folder.FolderView"
+          layer="medialog.batchsize.interfaces.IMedialogBatchsizeLayer"
           permission="zope2.View">
         <browser:page
             name="listing_view"
-            template="´templates/listing.pt"
-            menu="plone_displayviews"
-            title="Standard view"
+            template="templates/listing.pt"
             />
         <browser:page
             name="summary_view"
-            template="´templates/listing_summary.pt"
-            menu="plone_displayviews"
-            title="Summary view"
+            template="templates/listing_summary.pt"
             />
         <browser:page
             name="tabular_view"
-            template="´templates/listing_tabular.pt"
-            menu="plone_displayviews"
-            title="Tabular view"
+            template="templates/listing_tabular.pt"
             />
       </browser:pages>
 

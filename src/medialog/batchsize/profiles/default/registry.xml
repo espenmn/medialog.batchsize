@@ -1,5 +1,7 @@
 <?xml version="1.0"?>
 <registry>
-<!-- -*- extra stuff goes here -*- -->
-
+  <records interface="medialog.batchsize.interfaces.IBatchSettings">
+		<value key="batch_size">20</value>
+		<value key="hide_from_navigation"></value>
+	</records>
 </registry>

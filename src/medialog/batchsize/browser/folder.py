@@ -14,7 +14,7 @@ from Products.Five import BrowserView
 from zope.component import getMultiAdapter
 from zope.component import getUtility
 from zope.contentprovider.interfaces import IContentProvider
-
+from plone import api
 import random
 
 
@@ -61,8 +61,11 @@ class FolderView(BrowserView):
 
     @property
     def b_size(self):
+
         b_size = getattr(self.request, 'b_size', None)\
-            or getattr(self.request, 'limit_display', None) or 4
+            or getattr(self.request, 'limit_display', None) or \
+            api.portal.get_registry_record('medialog.batchsize.interfaces.IBatchSettings.batch_size') \
+            or 20
         return int(b_size)
 
     @property
@@ -82,10 +85,14 @@ class FolderView(BrowserView):
         :rtype: ``plone.app.contentlisting.interfaces.IContentListing`` based
                 sequence.
         """
+        #Check settings from registry (should we show hidden files)
+        exclude_from_nav = api.portal.get_registry_record('medialog.batchsize.interfaces.IBatchSettings.hide_from_navigation') \
         # Extra filter
         kwargs.update(self.request.get('contentFilter', {}))
         if 'object_provides' not in kwargs:  # object_provides is more specific
             kwargs.setdefault('portal_type', self.friendly_types)
+        if exclude_from_nav:
+            kwargs.setdefault('exclude_from_nav', False)
         kwargs.setdefault('batch', True)
         kwargs.setdefault('b_size', self.b_size)
         kwargs.setdefault('b_start', self.b_start)
