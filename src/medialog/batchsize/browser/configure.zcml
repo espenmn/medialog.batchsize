@@ -14,19 +14,19 @@
           permission="zope2.View">
         <browser:page
             name="listing_view"
-            template="plone/app/contenttypes/browser/templates/listing.pt"
+            template="´templates/listing.pt"
             menu="plone_displayviews"
             title="Standard view"
             />
         <browser:page
             name="summary_view"
-            template="plone/app/contenttypes/browser/templates/listing_summary.pt"
+            template="´templates/listing_summary.pt"
             menu="plone_displayviews"
             title="Summary view"
             />
         <browser:page
             name="tabular_view"
-            template="plone/app/contenttypes/browser/templates/listing_tabular.pt"
+            template="´templates/listing_tabular.pt"
             menu="plone_displayviews"
             title="Tabular view"
             />
@@ -40,19 +40,19 @@
           permission="zope2.View">
         <browser:page
             name="listing_view"
-            template="plone/app/contenttypes/browser/templates/listing.pt"
+            template="´templates/listing.pt"
             menu="plone_displayviews"
             title="Standard view"
             />
         <browser:page
             name="summary_view"
-            template="plone/app/contenttypes/browser/templates/listing_summary.pt"
+            template="´templates/listing_summary.pt"
             menu="plone_displayviews"
             title="Summary view"
             />
         <browser:page
             name="tabular_view"
-            template="plone/app/contenttypes/browser/templates/listing_tabular.pt"
+            template="´templates/listing_tabular.pt"
             menu="plone_displayviews"
             title="Tabular view"
             />
