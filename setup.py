@@ -42,6 +42,7 @@ setup(
     install_requires=[
         'setuptools',
         # -*- Extra requirements: -*-
+        'medialog.controlpanel,
         'z3c.jbot',
         'plone.api>=1.8.4',
         'plone.restapi',
